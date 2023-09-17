@@ -1,0 +1,140 @@
+.homeContainer {
+  height: 100vh;
+  max-height: fit-content;
+  width: 100%;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.leftContainer {
+  z-index: 8;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.leftContainer > div {
+  line-height: 0.9;
+  letter-spacing: 1;
+  background: linear-gradient(90deg, #ff9900, #e00808, #0084ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leftContainer h2 {
+  font-size: clamp(28px, 2.5vw, 36px);
+  font-weight: 500;
+  font-weight: 700;
+}
+
+.leftContainer h1 {
+  font-size: clamp(48px, 4vw, 56px);
+  font-weight: 900;
+  line-height: normal;
+}
+
+.leftContainer h4 {
+  line-height: 0.9;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: clamp(15px, 1.3vw, 20px);
+  font-weight: 900;
+  color: #c00808;
+}
+
+.leftContainer p {
+  margin-top: 15px;
+  color: #fff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  font-size: clamp(15px, 1.3vw, 18px);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.rightContainer {
+  z-index: 10;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightContainer > img {
+  object-fit: contain;
+  margin-left: 40px;
+}
+
+@media (max-width: 576px) {
+  .leftContainer h2 {
+    line-height: 1.5;
+  }
+
+  .leftContainer h1 {
+    line-height: 1.1;
+  }
+
+  .leftContainer h4 {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homeContainer {
+    padding: 80px 30px;
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .homeContainer {
+    justify-content: center;
+  }
+  .leftContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .leftContainer > div {
+    text-align: center;
+  }
+
+  .leftContainer h4,
+  .leftContainer p {
+    text-align: center;
+  }
+  .rightContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .leftContainer h2 {
+    font-size: 28px;
+  }
+
+  .leftContainer h1 {
+    font-size: 48px;
+  }
+
+  .leftContainer h4 {
+    font-size: 15px;
+  }
+
+  .leftContainer p {
+    font-size: 15px;
+  }
+
+  .rightContainer > img {
+    width: 80%;
+  }
+}

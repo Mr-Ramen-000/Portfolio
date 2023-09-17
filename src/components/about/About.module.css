@@ -1,0 +1,130 @@
+.aboutContainer {
+  height: 100vh;
+  width: 100%;
+  min-width: 350px;
+  background-color: #1c1c1c;
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutContainer > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.about,
+.skills {
+  z-index: 8;
+  width: 50%;
+  height: 80%;
+  padding: 60px;
+  padding-bottom: 100px;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  background-color: rgba(40, 40, 40, 0.95);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ff9900;
+  font-size: 33px;
+  font-weight: 800;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.about > p {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+
+.skills {
+  user-select: none;
+}
+
+.icons img {
+  filter: none;
+  transform: scale(0.9);
+  transition: all 300ms ease-in-out;
+  -webkit-user-drag: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px 5px;
+}
+
+@media (hover: hover) {
+  .icons img {
+    filter: grayscale();
+  }
+  .icons img:hover {
+    filter: none;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 576px) {
+  .about,
+  .skills {
+    padding: 30px;
+    padding-bottom: 100px;
+  }
+
+  .about > p {
+    text-align: justify;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContainer {
+    padding-top: 170px !important;
+  }
+
+  .aboutContainer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .about,
+  .skills {
+    padding: auto 0;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutContainer {
+    height: fit-content;
+    padding-bottom: 80px;
+    padding-top: 130px;
+  }
+
+  .aboutContainer > div {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .about,
+  .skills {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+
+  .about > p {
+    font-size: 15px;
+  }
+}

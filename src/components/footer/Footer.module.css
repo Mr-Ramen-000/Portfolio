@@ -1,0 +1,128 @@
+.footerSection {
+  min-width: 350px;
+  margin-top: 50px;
+  padding: 20px calc(5% + 30px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #282828;
+}
+
+.leftContainer h1 {
+  font-weight: 900;
+  letter-spacing: 1;
+  background: linear-gradient(90deg, #ff9900, #e00808, #0084ff 75%);
+  font-size: clamp(25px, 2.3vw, 32px);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.leftContainer h4 {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: clamp(13px, 1vw, 16px);
+  font-weight: 900;
+  color: #c00808;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.centerContainer p {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  color: white;
+}
+
+.rightContainer h3 {
+  text-align: right;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: white;
+  margin-bottom: 3px;
+}
+
+.rightContainer > div {
+  display: flex;
+  justify-content: end;
+  gap: 8px;
+}
+
+.rightContainer > div img {
+  width: 28px;
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3));
+  transform: scale(1);
+  transition: transform 50ms ease-in-out;
+  cursor: pointer;
+}
+
+@media (hover: hover) {
+  .rightContainer > div img:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 576px) {
+  .footerSection {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .centerContainer br {
+    display: block !important;
+  }
+
+  .centerContainer p {
+    width: 100%;
+    text-align: center !important;
+  }
+
+  .leftContainer h4 {
+    text-align: center;
+  }
+
+  .rightContainer h3 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerSection {
+    padding-left: 30px;
+    padding-right: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: auto auto;
+  }
+
+  .leftContainer {
+    order: 1;
+  }
+  .rightContainer {
+    order: 2;
+    grid-column-start: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .centerContainer {
+    order: 3;
+    margin-top: 5px;
+  }
+
+  .centerContainer br {
+    display: none;
+  }
+
+  .centerContainer p {
+    text-align: left;
+  }
+}
