@@ -33,7 +33,7 @@ function About() {
             I'm Mark Edison Jayag, a second year student at St. Vincent College
             of Cabuyao, studying Information Technology. I have a strong
             interest in learning more about web development. I love
-            exploring and learning new things, and outside of software
+            exploring and learning new things, and outside of web
             development, I enjoy playing online games.
           </p>
         </div>
