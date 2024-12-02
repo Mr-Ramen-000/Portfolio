@@ -30,7 +30,7 @@ function About() {
         <div className={styles.about}>
           <h1 className={styles.title}>About Me</h1>
           <p>
-            I'm Mark Edison Jayag, a second year student at St. Vincent College
+            I'm Mark Edison Jayag, a third year student at St. Vincent College
             of Cabuyao, studying Information Technology. I have a strong
             interest in learning more about web development. I love
             exploring and learning new things, and outside of web
