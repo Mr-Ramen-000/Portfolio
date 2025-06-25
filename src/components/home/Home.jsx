@@ -13,7 +13,7 @@ function Home() {
         <h4>Future Developer</h4>
 
         <p>
-          Third year student in St. Vincent College of Cabuyao taking Bachelor
+          Fourth year student in St. Vincent College of Cabuyao taking Bachelor
           of Science in Information Technology (BSIT)
         </p>
       </div>
