@@ -7,7 +7,7 @@ function Home() {
     <section id="home" className={styles.homeContainer}>
       <div className={styles.leftContainer}>
         <div>
-          <h2>Hello I am</h2>
+          <h2>Hello, I'm</h2>
           <h1>Mark Edison Jayag</h1>
         </div>
         <h4>Future Developer</h4>
