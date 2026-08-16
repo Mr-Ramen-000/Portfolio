@@ -4,8 +4,8 @@ import instaIcon from "../../assets/social/Instagram.svg";
 import gmailIcon from "../../assets/social/Gmail.svg";
 
 function FooterSection() {
-  const facebook = "https://www.facebook.com/ModernFixer";
-  const instagram = "https://www.instagram.com/mr_ramen_gg";
+  const facebook = "https://www.facebook.com/share/1F4JgqnWPc/";
+  const instagram = "https://www.instagram.com/edizoned_?igsh=aDU0emlyOWozMTNo&igsi=aDU0emlyOWozMTNo";
   const recipients = ["macvillaflores000@gmail.com", "ramengamingph@gmail.com"];
 
   return (
