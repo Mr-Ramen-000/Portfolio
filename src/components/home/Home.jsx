@@ -7,7 +7,6 @@ function Home() {
     <section id="home" className={styles.homeContainer}>
       <div className={styles.leftContainer}>
         <div>
-          <div>
     <h2>Hello, I'm</h2>
     <h1>Mark Edison Jayag</h1>
   </div>
