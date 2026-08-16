@@ -16,8 +16,8 @@ function FooterSection() {
       </div>
       <div className={styles.centerContainer}>
         <p>
-          © Copyright 2023. <br /> Made by Mark Edison Jayag
-        </p>
+  © Copyright {new Date().getFullYear()}. <br /> Made by Mark Edison Jayag
+</p>
       </div>
       <div className={styles.rightContainer}>
         <h3>Social</h3>
