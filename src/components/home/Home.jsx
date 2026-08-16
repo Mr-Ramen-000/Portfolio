@@ -7,15 +7,16 @@ function Home() {
     <section id="home" className={styles.homeContainer}>
       <div className={styles.leftContainer}>
         <div>
-          <h2>Hello, I'm</h2>
-          <h1>Mark Edison Jayag</h1>
-        </div>
-        <h4>Future Developer</h4>
+          <div>
+    <h2>Hello, I'm</h2>
+    <h1>Mark Edison Jayag</h1>
+  </div>
+  <h4>IT Graduate</h4>
 
-        <p>
-          Fourth year student in St. Vincent College of Cabuyao taking Bachelor
-          of Science in Information Technology (BSIT)
-        </p>
+  <p>
+    Bachelor of Science in Information Technology (BSIT) graduate from
+    St. Vincent College of Cabuyao.
+  </p>
       </div>
       <div className={styles.rightContainer}>
         <img src={edisonImg} alt="Edison Image" />
