@@ -30,12 +30,11 @@ function About() {
         <div className={styles.about}>
           <h1 className={styles.title}>About Me</h1>
           <p>
-            I'm Mark Edison Jayag, a fourth year student at St. Vincent College
-            of Cabuyao, studying Information Technology. I have a strong
-            interest in learning more about web development. I love
-            exploring and learning new things, and outside of web
-            development, I enjoy playing online games.
-          </p>
+  I'm Mark Edison Jayag, an Information Technology graduate from St. Vincent
+  College of Cabuyao. I have a strong interest in web development and enjoy
+  learning new technologies. I love exploring and building new things, and
+  outside of development, I enjoy playing online games.
+</p>
         </div>
         <div className={styles.skills}>
           <h1 className={styles.title}>Skills</h1>
